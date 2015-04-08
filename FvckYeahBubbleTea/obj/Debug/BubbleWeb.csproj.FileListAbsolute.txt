@@ -1,0 +1,123 @@
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\angularjs-crud-sample.dll.config
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\angularjs-crud-sample.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\angularjs-crud-sample.pdb
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Antlr3.Runtime.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\EntityFramework.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\EntityFramework.SqlServer.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Newtonsoft.Json.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Owin.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Net.Http.Formatting.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Helpers.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Http.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Http.WebHost.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Mvc.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Optimization.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Razor.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.WebPages.Deployment.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.WebPages.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.WebPages.Razor.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\WebGrease.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\EntityFramework.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\EntityFramework.SqlServer.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Net.Http.Formatting.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Http.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Http.WebHost.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Helpers.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Mvc.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Optimization.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.Razor.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.WebPages.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.WebPages.Deployment.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\System.Web.WebPages.Razor.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Newtonsoft.Json.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Antlr3.Runtime.pdb
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\BubbleWeb.csprojResolveAssemblyReference.cache
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\angularjs_crud_sample.Migrations.InitialCreate.resources
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\BubbleWeb.csproj.GenerateResource.Cache
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\angularjs-crud-sample.dll
+C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\angularjs-crud-sample.pdb
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Antlr3.Runtime.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\EntityFramework.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\EntityFramework.SqlServer.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Newtonsoft.Json.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Owin.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Net.Http.Formatting.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Helpers.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Http.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Http.WebHost.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Mvc.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Optimization.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Razor.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.WebPages.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\WebGrease.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\EntityFramework.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\EntityFramework.SqlServer.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Net.Http.Formatting.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Http.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Http.WebHost.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Helpers.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Mvc.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Optimization.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.Razor.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.WebPages.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Newtonsoft.Json.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Antlr3.Runtime.pdb
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.dll.config
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.pdb
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.pdb
