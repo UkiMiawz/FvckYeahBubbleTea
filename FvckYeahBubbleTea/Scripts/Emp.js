@@ -40,7 +40,7 @@
 //    }
 //}]);
 
-function friendController($scope, $http) {  
+/*function friendController($scope, $http) {  
     $scope.loading = true;
     $scope.addMode = false;
 
@@ -113,7 +113,7 @@ function friendController($scope, $http) {
         });
     };
 
-}
+}*/
 
 function baseTeaController($scope, $http) {
     $scope.loading = true;
@@ -156,7 +156,7 @@ function baseTeaController($scope, $http) {
     //Used to add a new record
     $scope.add = function () {
         $scope.loading = true;
-        $http.post('/api/BaseTea/', this.newbaseTea).success(function (data) {
+        $http.post('/api/BaseTea/', this.newBaseTea).success(function (data) {
             alert("Added Successfully!!");
             $scope.addMode = false;
             $scope.baseTeas.push(data);
@@ -169,7 +169,7 @@ function baseTeaController($scope, $http) {
     };
 
     //Used to edit a record
-    $scope.deletebaseTea = function () {
+    $scope.deleteBaseTea = function () {
         $scope.loading = true;
         var baseTeaId = this.baseTea.Id;
         $http.delete('/api/BaseTea/' + baseTeaId).success(function (data) {
