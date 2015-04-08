@@ -5,7 +5,7 @@
 
 <h2>Friends View</h2>
 <style>
-    #mydiv {
+    #mydiv, #mydiv2 {
         position: absolute;
         top: 0;
         left: 0;
@@ -25,6 +25,8 @@
         display: block;
     }
 </style>
+
+<!-- FRIEND -->
 <div data-ng-app data-ng-controller="friendController" class="container">
     <strong class="error">{{ error }}</strong>
     <div id="mydiv" data-ng-show="loading">
@@ -90,6 +92,50 @@
             <td>
                 <p data-ng-hide="friend.editMode"><a data-ng-click="toggleEdit(friend)" href="javascript:;">Edit</a> | <a data-ng-click="deletefriend(friend)" href="javascript:;">Delete</a></p>
                 <p data-ng-show="friend.editMode"><a data-ng-click="save(friend)" href="javascript:;">Save</a> | <a data-ng-click="toggleEdit(friend)" href="javascript:;">Cancel</a></p>
+            </td>
+        </tr>
+    </table>
+    <hr />
+
+
+</div>
+
+<!-- Base Tea -->
+<div data-ng-app data-ng-controller="baseTeaController" class="container">
+    <strong class="error">{{ error }}</strong>
+    <div id="mydiv2" data-ng-show="loading">
+        <img src="Images/ajax-loader.gif" class="ajax-loader" />
+    </div>
+    <p data-ng-hide="addMode"><a data-ng-click="toggleAdd()" href="javascript:;" class="btn btn-primary">Add New</a></p>
+    <form name="addBaseTea" data-ng-show="addMode" style="width:600px;margin:0px auto;">
+        <label>Name:</label><input type="text" data-ng-model="newBaseTea.Name" required />
+        <label>Price:</label><input type="text" data-ng-model="newBaseTea.Name" required />
+        <br />
+        <br />
+        <input type="submit" value="Add" data-ng-click="add()" data-ng-disabled="!addFriend.$valid" class="btn btn-primary" />
+        <input type="button" value="Cancel" data-ng-click="toggleAdd()" class="btn btn-primary" />
+        <br /><br />
+    </form>
+    <table class="table table-bordered table-hover" style="width:800px">
+        <tr>
+            <th>#</th>
+            <td>Name</td>
+            <th>Price</th>
+        </tr>
+
+        <tr data-ng-repeat="baseTea in baseTeas">
+            <td><strong data-ng-hide="baseTea.editMode">{{ baseTea.Id }}</strong></td>
+            <td>
+                <p data-ng-hide="baseTea.editMode">{{ baseTea.Name }}</p>
+                <input data-ng-show="baseTea.editMode" type="text" data-ng-model="baseTea.FirstName" />
+            </td>
+            <td>
+                <p data-ng-hide="baseTea.editMode">{{ baseTea.Price }}</p>
+                <input data-ng-show="baseTea.editMode" type="text" data-ng-model="baseTea.LastName" />
+            </td>
+            <td>
+                <p data-ng-hide="baseTea.editMode"><a data-ng-click="toggleEdit(baseTea)" href="javascript:;">Edit</a> | <a data-ng-click="deletefriend(baseTea)" href="javascript:;">Delete</a></p>
+                <p data-ng-show="baseTea.editMode"><a data-ng-click="save(baseTea)" href="javascript:;">Save</a> | <a data-ng-click="toggleEdit(baseTea)" href="javascript:;">Cancel</a></p>
             </td>
         </tr>
     </table>

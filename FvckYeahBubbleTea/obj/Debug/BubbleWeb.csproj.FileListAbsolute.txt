@@ -121,3 +121,6 @@ D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Fvck
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.pdb
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.dll
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.pdb
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csprojResolveAssemblyReference.cache
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.BubbleTeaAdd.resources
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csproj.GenerateResource.Cache

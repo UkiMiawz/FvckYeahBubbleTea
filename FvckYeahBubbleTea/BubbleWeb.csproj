@@ -174,10 +174,17 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ToppingController.cs" />
+    <Compile Include="Controllers\FlavorController.cs" />
+    <Compile Include="Controllers\BaseTeaController.cs" />
     <Compile Include="Controllers\FriendController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504080754326_BubbleTeaAdd.cs" />
+    <Compile Include="Migrations\201504080754326_BubbleTeaAdd.Designer.cs">
+      <DependentUpon>201504080754326_BubbleTeaAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -187,6 +194,7 @@
     <Compile Include="Models\BaseTea.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Flavor.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -572,6 +580,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504080754326_BubbleTeaAdd.resx">
+      <DependentUpon>201504080754326_BubbleTeaAdd.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
