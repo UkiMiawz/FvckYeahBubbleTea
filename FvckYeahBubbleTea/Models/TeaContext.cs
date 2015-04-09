@@ -18,5 +18,8 @@ namespace FvckYeahBubbleTea.Models
         public DbSet<BaseTea> BaseTeas { get; set; }
         public DbSet<Flavor> Flavors { get; set; }
         public DbSet<Topping> Toppings { get; set; }
+        public DbSet<Size> Sizes { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<FinalOrder> FinalOrders { get; set; }
     }
 }

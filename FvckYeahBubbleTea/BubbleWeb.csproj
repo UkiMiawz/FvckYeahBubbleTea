@@ -174,6 +174,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\OrderController - Copy.cs" />
+    <Compile Include="Controllers\SizeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ToppingController.cs" />
     <Compile Include="Controllers\FlavorController.cs" />
     <Compile Include="Controllers\BaseTeaController.cs" />
@@ -185,6 +188,10 @@
     <Compile Include="Migrations\201504080754326_BubbleTeaAdd.cs" />
     <Compile Include="Migrations\201504080754326_BubbleTeaAdd.Designer.cs">
       <DependentUpon>201504080754326_BubbleTeaAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504090243419_AddOrder.cs" />
+    <Compile Include="Migrations\201504090243419_AddOrder.Designer.cs">
+      <DependentUpon>201504090243419_AddOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -198,6 +205,9 @@
     <Compile Include="Models\Flavor.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\FinalOrder.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Size.cs" />
     <Compile Include="Models\Topping.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -241,10 +251,8 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\BaseTea.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Customer.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
     <Content Include="Scripts\angular-sanitize.min.js.map" />
@@ -256,7 +264,6 @@
     <Content Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Emp.js" />
-    <Content Include="Scripts\Flavor.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
@@ -587,6 +594,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201504080754326_BubbleTeaAdd.resx">
       <DependentUpon>201504080754326_BubbleTeaAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504090243419_AddOrder.resx">
+      <DependentUpon>201504090243419_AddOrder.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
