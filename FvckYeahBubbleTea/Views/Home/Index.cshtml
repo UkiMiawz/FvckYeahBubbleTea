@@ -34,7 +34,7 @@
         <div id="mydiv2" data-ng-show="loading">
             <img src="Images/ajax-loader.gif" class="ajax-loader" />
         </div>
-        <form class="navbar-form navbar-left">
+        <form name="addOrder" class="navbar-form navbar-left">
             <div class="col-md-12 input-group">
 
                 <div class="col-md-12">
@@ -46,7 +46,10 @@
                 <div class="col-md-12">
                     <label>Size</label>
                     <label ng-repeat="size in teaSizes">
-                        <label class="radio-inline"><input class="form-control" type="radio" ng-change="updatePrice()" ng-model="$parent.selectedSize" ng-value="size">{{size.Name}}</label>
+                        <label class="radio-inline">
+                            <input class="form-control" type="radio" ng-change="updatePrice()" ng-model="$parent.selectedSize" 
+                                   ng-value="size">{{size.Name}}
+                        </label>
                     </label>
                 </div>
 
@@ -70,10 +73,46 @@
                     {{selectedToppings | json}}
                 </div>
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-info" value="Add Order">
+                    <input type="submit" ng-click="add()" class="btn btn-info" value="Add Order">
                 </div>
             </div>
         </form>
+        
+        <table class="table table-bordered table-hover" style="width:800px">
+            <tr>
+                <th>#</th>
+                <th>Size</th>
+                <th>Base</th>
+                <th>Tea</th>
+                <th>Toppings</th>
+                <th>Price</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+
+            <tr data-ng-repeat="order in orders">
+                <td><strong data-ng-hide="order.editMode">{{ order.Id }}</strong></td>
+                <td>
+                    <p data-ng-hide="order.editMode">{{ order.BaseTea.Name }}</p>
+                    <input data-ng-show="order.editMode" type="text" data-ng-model="order.BaseTea.Name" />
+                </td>
+                <td>
+                    <p data-ng-hide="order.editMode">{{ order.Flavor.Name }}</p>
+                    <input data-ng-show="order.editMode" type="text" data-ng-model="order.Flavor.Name" />
+                </td>
+                <td>
+                    <p data-ng-hide="order.editMode">{{ order.Toppings.Count }}</p>
+                </td>
+                <td>
+                    <p data-ng-hide="order.editMode">{{ order.BaseTea.Name }}</p>
+                </td>
+                <td>
+                    <p data-ng-hide="order.editMode"><a data-ng-click="toggleEdit(order)" href="javascript:;">Edit</a> | <a data-ng-click="deleteOrder(order)" href="javascript:;">Delete</a></p>
+                    <p data-ng-show="order.editMode"><a data-ng-click="save(order)" href="javascript:;">Save</a> | <a data-ng-click="toggleEdit(order)" href="javascript:;">Cancel</a></p>
+                </td>
+            </tr>
+        </table>
+        <hr />
 
     </div>
 

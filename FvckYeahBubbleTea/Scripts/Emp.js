@@ -128,8 +128,18 @@ app.controller('OrderController', function($scope, $http) {
         $scope.loading = false;
     });
 
-    $scope.updatePrice = function () {
+    $scope.loading = true;
+    //Get orders
+    $http.get('/api/order/').success(function (data) {
+        $scope.orders = data;
+        $scope.loading = false;
+    })
+    .error(function () {
+        $scope.error = "An Error has occured!";
+        $scope.loading = false;
+    });
 
+    $scope.updatePrice = function() {
         if ($scope.selectedSize != null) {
 
             $scope.totalPrice = $scope.selectedSize.Price;
@@ -139,7 +149,28 @@ app.controller('OrderController', function($scope, $http) {
             }
             $scope.$apply();
         }
-        
-    }
+
+    };
+
+    //Used to add a new record
+    $scope.add = function () {
+        console.log("TESSSTTTTTT");
+        $scope.loading = true;
+        var newOrder = {
+            BaseTea: $scope.selectedBaseTea,
+            Flavor: $scope.selectedFlavor,
+            Size: $scope.selectedSize,
+            Toppings: $scope.selectedToppings
+        };
+        $http.post('/api/order/', newOrder).success(function (data) {
+            alert("Added Successfully!!");
+            $scope.orders.push(data);
+            $scope.loading = false;
+        }).error(function (data) {
+            $scope.error = "An Error has occured while Adding Order! " + data;
+            $scope.loading = false;
+
+        });
+    };
 
 })
