@@ -3,75 +3,78 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Fvck Yeah Bubble Tea</h2>
-<style>
-    #mydiv, #mydiv2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1000;
-        background-color: grey;
-        opacity: .8;
-    }
+<div ng-app="FvckYeahBubbleTea">
 
-    .ajax-loader {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -32px; /* -1 * image width / 2 */
-        margin-top: -32px; /* -1 * image height / 2 */
-        display: block;
-    }
-</style>
+    <h2>Fvck Yeah Bubble Tea</h2>
+    <style>
+        #mydiv, #mydiv2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background-color: grey;
+            opacity: .8;
+        }
 
-<!-- Order -->
-<div data-ng-app data-ng-controller="OrderController" ng-app="app" class="container">
-    <strong class="error">{{ error }}</strong>
-    <div id="mydiv2" data-ng-show="loading">
-        <img src="Images/ajax-loader.gif" class="ajax-loader" />
-    </div>
-    <form class="navbar-form navbar-left">
-        <div class="col-md-12 input-group">
+        .ajax-loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -32px; /* -1 * image width / 2 */
+            margin-top: -32px; /* -1 * image height / 2 */
+            display: block;
+        }
+    </style>
 
-            <div class="col-md-12">
-                <label>Base Tea</label>
-                <select class="form-control" ng-model="selectedBaseTea"
-                        ng-options="item as item.Name for item in baseTeas" ng-change="updatePrice()"></select>
-            </div>
-
-            <div class="col-md-12">
-                <label>Size</label>
-                <label ng-repeat="size in teaSizes">
-                    <label class="radio-inline"><input class="form-control" type="radio" ng-click="updatePrice()" ng-model="$parent.selectedSize" ng-value="size">{{size.Name}}</label>
-                </label>
-            </div>
-
-            <div class="col-md-12">
-                <label>Flavor</label>
-                <select class="form-control" ng-model="selectedFlavor" ng-change="updatePrice()"
-                        ng-options="item as item.Name for item in flavors"></select>
-            </div>
-
-            <div class="col-md-12">
-                <label>Topping</label>
-                <label ng-repeat="topping in toppings">
-                    <label class="checkbox-inline"><input class="form-control" type="checkbox" checklist-model="$parent.selectedToppings" ng-click="updatePrice()" checklist-value="topping">{{topping.Name}}</label>
-                </label>
-            </div>
-            <div class="col-md-12">
-                <label>Total Price : ${{totalPrice}}</label>
-                {{selectedBaseTea.Name}}
-                {{selectedFlavor.Name}}
-                {{selectedSize | json}}
-                {{selectedToppings | json}}
-            </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-info" value="Add Order">
-            </div>
+    <!-- Order -->
+    <div data-ng-app data-ng-controller="OrderController" class="container">
+        <strong class="error">{{ error }}</strong>
+        <div id="mydiv2" data-ng-show="loading">
+            <img src="Images/ajax-loader.gif" class="ajax-loader" />
         </div>
-    </form>
+        <form class="navbar-form navbar-left">
+            <div class="col-md-12 input-group">
+
+                <div class="col-md-12">
+                    <label>Base Tea</label>
+                    <select class="form-control" ng-model="selectedBaseTea"
+                            ng-options="item as item.Name for item in baseTeas" ng-change="updatePrice()"></select>
+                </div>
+
+                <div class="col-md-12">
+                    <label>Size</label>
+                    <label ng-repeat="size in teaSizes">
+                        <label class="radio-inline"><input class="form-control" type="radio" ng-change="updatePrice()" ng-model="$parent.selectedSize" ng-value="size">{{size.Name}}</label>
+                    </label>
+                </div>
+
+                <div class="col-md-12">
+                    <label>Flavor</label>
+                    <select class="form-control" ng-model="selectedFlavor" ng-change="updatePrice()"
+                            ng-options="item as item.Name for item in flavors"></select>
+                </div>
+
+                <div class="col-md-12">
+                    <label>Topping</label>
+                    <label ng-repeat="topping in toppings">
+                        <label class="checkbox-inline"><input class="form-control" type="checkbox" checklist-model="$parent.selectedToppings" ng-change="updatePrice()" checklist-value="topping">{{topping.Name}}</label>
+                    </label>
+                </div>
+                <div class="col-md-12">
+                    <label>Total Price : ${{totalPrice}}</label>
+                    {{selectedBaseTea.Name}}
+                    {{selectedFlavor.Name}}
+                    {{selectedSize | json}}
+                    {{selectedToppings | json}}
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-info" value="Add Order">
+                </div>
+            </div>
+        </form>
+
+    </div>
 
 </div>
-

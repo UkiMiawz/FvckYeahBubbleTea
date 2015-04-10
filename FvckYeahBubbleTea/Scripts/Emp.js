@@ -73,7 +73,7 @@
 
 }*/
 
-var app = angular.module("app", ["checklist-model"]);
+var app = angular.module("FvckYeahBubbleTea", ["checklist-model"]);
 app.controller('OrderController', function($scope, $http) {
 
     $scope.loading = true;
