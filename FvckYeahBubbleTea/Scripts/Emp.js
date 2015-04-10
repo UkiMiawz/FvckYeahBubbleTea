@@ -1,4 +1,4 @@
-﻿function baseTeaController($scope, $http) {
+﻿/*function baseTeaController($scope, $http) {
     $scope.loading = true;
     $scope.addMode = false;
 
@@ -71,4 +71,75 @@
         });
     };
 
-}
+}*/
+
+var app = angular.module("app", ["checklist-model"]);
+app.controller('OrderController', function($scope, $http) {
+
+    $scope.loading = true;
+
+    $scope.selectedBaseTea = null;
+    $scope.selectedFlavor = null;
+    $scope.selectedSize = null;
+    $scope.selectedToppings = [];
+
+    $scope.totalPrice = 0;
+
+    //Get base tea
+    $http.get('/api/baseTea/').success(function (data) {
+        $scope.baseTeas = data;
+        $scope.loading = false;
+    })
+    .error(function () {
+        $scope.error = "An Error has occured!";
+        $scope.loading = false;
+    });
+
+    $scope.loading = true;
+    //Get flavors
+    $http.get('/api/flavor/').success(function (data) {
+        $scope.flavors = data;
+        $scope.loading = false;
+    })
+    .error(function () {
+        $scope.error = "An Error has occured!";
+        $scope.loading = false;
+    });
+
+    $scope.loading = true;
+    //Get size
+    $http.get('/api/size/').success(function (data) {
+        $scope.teaSizes = data;
+        $scope.loading = false;
+    })
+    .error(function () {
+        $scope.error = "An Error has occured!";
+        $scope.loading = false;
+    });
+
+    $scope.loading = true;
+    //Get toppings
+    $http.get('/api/topping/').success(function (data) {
+        $scope.toppings = data;
+        $scope.loading = false;
+    })
+    .error(function () {
+        $scope.error = "An Error has occured!";
+        $scope.loading = false;
+    });
+
+    $scope.updatePrice = function () {
+
+        if ($scope.selectedSize != null) {
+
+            $scope.totalPrice = $scope.selectedSize.Price;
+
+            for (var i = 0; i < $scope.selectedToppings.length; i++) {
+                $scope.totalPrice += $scope.selectedToppings[i].Price;
+            }
+            $scope.$apply();
+        }
+        
+    }
+
+})

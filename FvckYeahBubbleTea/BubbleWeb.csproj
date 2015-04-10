@@ -174,13 +174,12 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\OrderController - Copy.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\SizeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ToppingController.cs" />
     <Compile Include="Controllers\FlavorController.cs" />
     <Compile Include="Controllers\BaseTeaController.cs" />
-    <Compile Include="Controllers\FriendController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -192,6 +191,14 @@
     <Compile Include="Migrations\201504090243419_AddOrder.cs" />
     <Compile Include="Migrations\201504090243419_AddOrder.Designer.cs">
       <DependentUpon>201504090243419_AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504100504327_UpdateOrder.cs" />
+    <Compile Include="Migrations\201504100504327_UpdateOrder.Designer.cs">
+      <DependentUpon>201504100504327_UpdateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504100510088_AddCustomer.cs" />
+    <Compile Include="Migrations\201504100510088_AddCustomer.Designer.cs">
+      <DependentUpon>201504100510088_AddCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -205,14 +212,11 @@
     <Compile Include="Models\Flavor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\FinalOrder.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Size.cs" />
     <Compile Include="Models\Topping.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\Values\Enumerations.cs" />
-    <Compile Include="Models\Friend.cs" />
     <Compile Include="Models\TeaContext.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -253,6 +257,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\directives.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
     <Content Include="Scripts\angular-sanitize.min.js.map" />
@@ -582,7 +587,6 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Home\EmployeeView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -597,6 +601,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504090243419_AddOrder.resx">
       <DependentUpon>201504090243419_AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504100504327_UpdateOrder.resx">
+      <DependentUpon>201504100504327_UpdateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504100510088_AddCustomer.resx">
+      <DependentUpon>201504100510088_AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

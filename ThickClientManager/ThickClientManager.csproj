@@ -98,6 +98,7 @@
     <Compile Include="DataTransferObject\Flavor.cs" />
     <Compile Include="DataTransferObject\Size.cs" />
     <Compile Include="DataTransferObject\Topping.cs" />
+    <Compile Include="Global\Constants.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -148,6 +149,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,7 +8,7 @@ namespace FvckYeahBubbleTea.Models
 {
     public class Order:BaseClass
     {
-        public Size Size { get; set; }
+        public TeaSize Size { get; set; }
         public BaseTea BaseTea { get; set; }
         public Flavor Flavor { get; set; }
         public List<Topping> Toppings { get; set; }

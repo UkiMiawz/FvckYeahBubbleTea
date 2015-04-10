@@ -15,15 +15,15 @@ namespace FvckYeahBubbleTea.Controllers
         private TeaContext db = new TeaContext();
         // GET api/<controller>
         [HttpGet]
-        public IEnumerable<Size> Get()         
+        public IEnumerable<TeaSize> Get()         
         {
             return db.Sizes.AsEnumerable();
         }
 
         // GET api/<controller>/5
-        public Size Get(int id)
+        public TeaSize Get(int id)
         {
-            Size size = db.Sizes.Find(id);
+            TeaSize size = db.Sizes.Find(id);
             if (size == null)
             {
                 throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound));
@@ -33,7 +33,7 @@ namespace FvckYeahBubbleTea.Controllers
         }
 
         // POST api/<controller>
-        public HttpResponseMessage Post(Size size)
+        public HttpResponseMessage Post(TeaSize size)
         {
             if (ModelState.IsValid)
             {
@@ -51,7 +51,7 @@ namespace FvckYeahBubbleTea.Controllers
         }
 
         // PUT api/<controller>/5
-        public HttpResponseMessage Put(int id, Size size)
+        public HttpResponseMessage Put(int id, TeaSize size)
         {
             if (!ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace FvckYeahBubbleTea.Controllers
         // DELETE api/<controller>/5
         public HttpResponseMessage Delete(int id)
         {
-            Size size = db.Sizes.Find(id);
+            TeaSize size = db.Sizes.Find(id);
             if (size == null)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound);

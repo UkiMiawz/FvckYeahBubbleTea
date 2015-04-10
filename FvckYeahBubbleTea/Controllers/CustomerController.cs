@@ -10,38 +10,38 @@ using FvckYeahBubbleTea.Models;
 
 namespace FvckYeahBubbleTea.Controllers
 {
-    public class FriendController : ApiController
+    public class CustomerController : ApiController
     {
         private TeaContext db = new TeaContext();
         // GET api/<controller>
         [HttpGet]
-        public IEnumerable<Friend> Get()         
+        public IEnumerable<Customer> Get()         
         {
-            return db.Friends.AsEnumerable();
+            return db.Customers.AsEnumerable();
         }
 
         // GET api/<controller>/5
-        public Friend Get(int id)
+        public Customer Get(int id)
         {
-            Friend friend = db.Friends.Find(id);
-            if (friend == null)
+            Customer customer = db.Customers.Find(id);
+            if (customer == null)
             {
                 throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound));
             }
 
-            return friend;
+            return customer;
         }
 
         // POST api/<controller>
-        public HttpResponseMessage Post(Friend friend)
+        public HttpResponseMessage Post(Customer customer)
         {
             if (ModelState.IsValid)
             {
-                db.Friends.Add(friend);
+                db.Customers.Add(customer);
                 db.SaveChanges();
 
-                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, friend);
-                response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = friend.FriendId }));
+                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, customer);
+                response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = customer.Id }));
                 return response;
             }
             else
@@ -51,19 +51,19 @@ namespace FvckYeahBubbleTea.Controllers
         }
 
         // PUT api/<controller>/5
-        public HttpResponseMessage Put(int id, Friend friend)
+        public HttpResponseMessage Put(int id, Customer customer)
         {
             if (!ModelState.IsValid)
             {
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
             }
 
-            if (id != friend.FriendId)
+            if (id != customer.Id)
             {
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
             }
 
-            db.Entry(friend).State = EntityState.Modified;
+            db.Entry(customer).State = EntityState.Modified;
 
             try
             {
@@ -80,13 +80,13 @@ namespace FvckYeahBubbleTea.Controllers
         // DELETE api/<controller>/5
         public HttpResponseMessage Delete(int id)
         {
-            Friend friend = db.Friends.Find(id);
-            if (friend == null)
+            Customer customer = db.Customers.Find(id);
+            if (customer == null)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound);
             }
 
-            db.Friends.Remove(friend);
+            db.Customers.Remove(customer);
 
             try
             {
@@ -97,7 +97,7 @@ namespace FvckYeahBubbleTea.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex);
             }
 
-            return Request.CreateResponse(HttpStatusCode.OK, friend);
+            return Request.CreateResponse(HttpStatusCode.OK, customer);
         }
 
         protected override void Dispose(bool disposing)

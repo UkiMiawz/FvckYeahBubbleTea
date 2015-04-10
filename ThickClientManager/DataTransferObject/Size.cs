@@ -1,6 +1,6 @@
 ﻿namespace ThickClientManager.DataTransferObject
 {
-    public class Size:BaseClass
+    public class TeaSize:BaseClass
     {
         public float Price { get; set; }
     }

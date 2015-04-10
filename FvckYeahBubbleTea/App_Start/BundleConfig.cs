@@ -32,7 +32,8 @@ namespace FvckYeahBubbleTea
                       "~/Scripts/angular.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/empjs").Include(
-                     "~/Scripts/Emp.js"));
+                     "~/Scripts/Emp.js",
+                     "~/Scripts/directives.js"));
         }
     }
 }

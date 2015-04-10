@@ -1,9 +1,9 @@
 ﻿@{
-    ViewBag.Title = "FriendView";
+    ViewBag.Title = "BubbleTeaView";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Friends View</h2>
+<h2>Fvck Yeah Bubble Tea</h2>
 <style>
     #mydiv, #mydiv2 {
         position: absolute;
@@ -26,47 +26,52 @@
     }
 </style>
 
-<!-- Base Tea -->
-<div data-ng-app data-ng-controller="baseTeaController" class="container">
+<!-- Order -->
+<div data-ng-app data-ng-controller="OrderController" ng-app="app" class="container">
     <strong class="error">{{ error }}</strong>
     <div id="mydiv2" data-ng-show="loading">
         <img src="Images/ajax-loader.gif" class="ajax-loader" />
     </div>
-    <p data-ng-hide="addMode"><a data-ng-click="toggleAdd()" href="javascript:;" class="btn btn-primary">Add New</a></p>
-    <form name="addBaseTea" data-ng-show="addMode" style="width:600px;margin:0px auto;">
-        <label>Name:</label><input type="text" data-ng-model="newBaseTea.Name" required />
-        <label>Price:</label><input type="text" data-ng-model="newBaseTea.Price" required />
-        <br />
-        <br />
-        <input type="submit" value="Add" data-ng-click="add()" data-ng-disabled="!addBaseTea.$valid" class="btn btn-primary" />
-        <input type="button" value="Cancel" data-ng-click="toggleAdd()" class="btn btn-primary" />
-        <br /><br />
+    <form class="navbar-form navbar-left">
+        <div class="col-md-12 input-group">
+
+            <div class="col-md-12">
+                <label>Base Tea</label>
+                <select class="form-control" ng-model="selectedBaseTea"
+                        ng-options="item as item.Name for item in baseTeas" ng-change="updatePrice()"></select>
+            </div>
+
+            <div class="col-md-12">
+                <label>Size</label>
+                <label ng-repeat="size in teaSizes">
+                    <label class="radio-inline"><input class="form-control" type="radio" ng-click="updatePrice()" ng-model="$parent.selectedSize" ng-value="size">{{size.Name}}</label>
+                </label>
+            </div>
+
+            <div class="col-md-12">
+                <label>Flavor</label>
+                <select class="form-control" ng-model="selectedFlavor" ng-change="updatePrice()"
+                        ng-options="item as item.Name for item in flavors"></select>
+            </div>
+
+            <div class="col-md-12">
+                <label>Topping</label>
+                <label ng-repeat="topping in toppings">
+                    <label class="checkbox-inline"><input class="form-control" type="checkbox" checklist-model="$parent.selectedToppings" ng-click="updatePrice()" checklist-value="topping">{{topping.Name}}</label>
+                </label>
+            </div>
+            <div class="col-md-12">
+                <label>Total Price : ${{totalPrice}}</label>
+                {{selectedBaseTea.Name}}
+                {{selectedFlavor.Name}}
+                {{selectedSize | json}}
+                {{selectedToppings | json}}
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-info" value="Add Order">
+            </div>
+        </div>
     </form>
-    <table class="table table-bordered table-hover" style="width:800px">
-        <tr>
-            <th>#</th>
-            <td>Name</td>
-            <th>Price</th>
-        </tr>
-
-        <tr data-ng-repeat="baseTea in baseTeas">
-            <td><strong data-ng-hide="baseTea.editMode">{{ baseTea.Id }}</strong></td>
-            <td>
-                <p data-ng-hide="baseTea.editMode">{{ baseTea.Name }}</p>
-                <input data-ng-show="baseTea.editMode" type="text" data-ng-model="baseTea.Name" />
-            </td>
-            <td>
-                <p data-ng-hide="baseTea.editMode">{{ baseTea.Price }}</p>
-                <input data-ng-show="baseTea.editMode" type="text" data-ng-model="baseTea.Price" />
-            </td>
-            <td>
-                <p data-ng-hide="baseTea.editMode"><a data-ng-click="toggleEdit(baseTea)" href="javascript:;">Edit</a> | <a data-ng-click="deleteBaseTea(baseTea)" href="javascript:;">Delete</a></p>
-                <p data-ng-show="baseTea.editMode"><a data-ng-click="save(baseTea)" href="javascript:;">Save</a> | <a data-ng-click="toggleEdit(baseTea)" href="javascript:;">Cancel</a></p>
-            </td>
-        </tr>
-    </table>
-    <hr />
-
 
 </div>
 
