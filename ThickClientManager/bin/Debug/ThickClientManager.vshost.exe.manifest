@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ThickClientManager.exe" size="45992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ThickClientManager.exe" size="47016">
       <assemblyIdentity name="ThickClientManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BYCc4WNHiqV2Ioi4xqfj6iWnYMERepg9qjyXbXkY9Lg=</dsig:DigestValue>
+        <dsig:DigestValue>95wd8N5hFVv7Xky6/DNPUcAHucLHW5lP8rroEvB0svM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

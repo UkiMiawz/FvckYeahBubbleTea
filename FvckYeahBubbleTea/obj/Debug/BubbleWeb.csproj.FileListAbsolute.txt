@@ -61,6 +61,9 @@ C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C
 C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\BubbleWeb.csproj.GenerateResource.Cache
 C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\angularjs-crud-sample.dll
 C:\Users\melcec\Downloads\CRUD Operations in MVC 5 using WebAPI with AngularJS\C#\angularjs-crud-sample\obj\Debug\angularjs-crud-sample.pdb
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.dll.config
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.dll
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.pdb
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Antlr3.Runtime.dll
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\EntityFramework.dll
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\EntityFramework.SqlServer.dll
@@ -116,14 +119,9 @@ D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Micr
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Google.xml
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.dll.config
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.dll
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\FvckYeahBubbleTea.pdb
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csprojResolveAssemblyReference.cache
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.Initial.resources
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.changeEf.resources
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csproj.GenerateResource.Cache
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.dll
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.pdb
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csprojResolveAssemblyReference.cache
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.BubbleTeaAdd.resources
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csproj.GenerateResource.Cache
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.AddOrder.resources
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.UpdateOrder.resources
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.AddCustomer.resources

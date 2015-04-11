@@ -23,6 +23,9 @@ namespace ThickClientManager.Global
         #region Error Messages
 
         public const string GeneralError = "An error occured";
+        public const string NameError = "Please input name";
+        public const string PriceError = "Please input price";
+        public const string NumberError = "Please input number for price";
 
         #endregion
 

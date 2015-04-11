@@ -8,15 +8,15 @@ namespace FvckYeahBubbleTea.Models
 {
     public class Order:BaseClass
     {
-        public TeaSize Size { get; set; }
-        public BaseTea BaseTea { get; set; }
-        public Flavor Flavor { get; set; }
-        public List<Topping> Toppings { get; set; }
+        public int SizeId { get; set; }
+        public virtual TeaSize Size { get; set; }
 
-        public float TotalPrice
-        {
-            get { return Size.Price + Toppings.Sum(x => x.Price); }
-            
-        }
+        public int BaseTeaId { get; set; }
+        public virtual BaseTea BaseTea { get; set; }
+
+        public int FlavorId { get; set; }
+        public virtual Flavor Flavor { get; set; }
+
+        public virtual ICollection<Topping> Toppings { get; set; }
     }
 }

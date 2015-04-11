@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div ng-app="FvckYeahBubbleTea">
+<div ng-app="FvckYeahBubbleTea" class="container">
 
     <h2>Fvck Yeah Bubble Tea</h2>
     <style>
@@ -34,86 +34,110 @@
         <div id="mydiv2" data-ng-show="loading">
             <img src="Images/ajax-loader.gif" class="ajax-loader" />
         </div>
-        <form name="addOrder" class="navbar-form navbar-left">
-            <div class="col-md-12 input-group">
+        <div class="row panel panel-default">
+            <div class="panel-heading">Add New Order</div>
+            <form name="addOrder" class="form-horizontal">
+                <div class="col-md-12 panel-body">
 
-                <div class="col-md-12">
-                    <label>Base Tea</label>
-                    <select class="form-control" ng-model="selectedBaseTea"
-                            ng-options="item as item.Name for item in baseTeas" ng-change="updatePrice()"></select>
-                </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Base Tea</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" ng-model="selectedBaseTea"
+                                    ng-options="item as item.Name for item in baseTeas"></select>
+                        </div>
+                    </div>
 
-                <div class="col-md-12">
-                    <label>Size</label>
-                    <label ng-repeat="size in teaSizes">
-                        <label class="radio-inline">
-                            <input class="form-control" type="radio" ng-change="updatePrice()" ng-model="$parent.selectedSize" 
-                                   ng-value="size">{{size.Name}}
-                        </label>
-                    </label>
-                </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Size</label>
+                        <div class="col-sm-8">
+                            <label ng-repeat="size in teaSizes">
+                                    <input type="radio" ng-model="$parent.selectedSize"
+                                           ng-value="size">{{size.Name}}
+                            </label>
+                        </div>
+                    </div>
 
-                <div class="col-md-12">
-                    <label>Flavor</label>
-                    <select class="form-control" ng-model="selectedFlavor" ng-change="updatePrice()"
-                            ng-options="item as item.Name for item in flavors"></select>
-                </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Flavor</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" ng-model="selectedFlavor"
+                                    ng-options="item as item.Name for item in flavors"></select>
+                        </div>
+                    </div>
 
-                <div class="col-md-12">
-                    <label>Topping</label>
-                    <label ng-repeat="topping in toppings">
-                        <label class="checkbox-inline"><input class="form-control" type="checkbox" checklist-model="$parent.selectedToppings" ng-change="updatePrice()" checklist-value="topping">{{topping.Name}}</label>
-                    </label>
-                </div>
-                <div class="col-md-12">
-                    <label>Total Price : ${{totalPrice}}</label>
-                    {{selectedBaseTea.Name}}
-                    {{selectedFlavor.Name}}
-                    {{selectedSize | json}}
-                    {{selectedToppings | json}}
-                </div>
-                <div class="col-md-12">
-                    <input type="submit" ng-click="add()" class="btn btn-info" value="Add Order">
-                </div>
-            </div>
-        </form>
-        
-        <table class="table table-bordered table-hover" style="width:800px">
-            <tr>
-                <th>#</th>
-                <th>Size</th>
-                <th>Base</th>
-                <th>Tea</th>
-                <th>Toppings</th>
-                <th>Price</th>
-                <th>Edit</th>
-                <th>Delete</th>
-            </tr>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Topping</label>
+                        <div class="col-sm-8">
+                            <label ng-repeat="topping in toppings">
+                                <label><input type="checkbox" checklist-model="$parent.selectedToppings" checklist-value="topping">{{topping.Name}}</label>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Total Order :</label>
+                        <div class="col-sm-8">
+                            ${{ updatePrice() }}
+                        </div>
+                    </div>
 
-            <tr data-ng-repeat="order in orders">
-                <td><strong data-ng-hide="order.editMode">{{ order.Id }}</strong></td>
-                <td>
-                    <p data-ng-hide="order.editMode">{{ order.BaseTea.Name }}</p>
-                    <input data-ng-show="order.editMode" type="text" data-ng-model="order.BaseTea.Name" />
-                </td>
-                <td>
-                    <p data-ng-hide="order.editMode">{{ order.Flavor.Name }}</p>
-                    <input data-ng-show="order.editMode" type="text" data-ng-model="order.Flavor.Name" />
-                </td>
-                <td>
-                    <p data-ng-hide="order.editMode">{{ order.Toppings.Count }}</p>
-                </td>
-                <td>
-                    <p data-ng-hide="order.editMode">{{ order.BaseTea.Name }}</p>
-                </td>
-                <td>
-                    <p data-ng-hide="order.editMode"><a data-ng-click="toggleEdit(order)" href="javascript:;">Edit</a> | <a data-ng-click="deleteOrder(order)" href="javascript:;">Delete</a></p>
-                    <p data-ng-show="order.editMode"><a data-ng-click="save(order)" href="javascript:;">Save</a> | <a data-ng-click="toggleEdit(order)" href="javascript:;">Cancel</a></p>
-                </td>
-            </tr>
-        </table>
+                    <hr />
+
+                    <div class="col-sm-10">
+                        <input type="submit" ng-click="add()" class="btn btn-info" value="Add Order">
+                    </div>
+                </div>
+            </form>
+        </div>
         <hr />
+        <div class="col-md-12 row">
+            <table class="table table-bordered table-hover" style="width:800px">
+                <tr>
+                    <th>#</th>
+                    <th width="20%">Size</th>
+                    <th width="20%">Base</th>
+                    <th width="20%">Tea</th>
+                    <th width="20%">Toppings</th>
+                    <th width="10%">Price</th>
+                    <th>Actions</th>
+                </tr>
 
+                <tr data-ng-repeat="order in orders">
+                    <td><strong data-ng-hide="order.editMode">{{ order.Id }}</strong></td>
+                    <td>
+                        <p data-ng-hide="order.editMode">{{ order.Size.Name }}</p>
+                        <label ng-repeat="size in teaSizes">
+                            <input type="radio" name="a{{ order.Id }}" data-ng-show="order.editMode" ng-model="$parent.order.Size"
+                                   ng-checked="{{size.Id == $parent.order.Size.Id}}" ng-value="size"><span data-ng-show="order.editMode">{{size.Name}}</span>
+                        </label>
+                    </td>
+                    <td>
+                        <p data-ng-hide="order.editMode">{{ order.BaseTea.Name }}</p>
+                        <select class="form-control" data-ng-show="order.editMode" ng-model="order.BaseTea"
+                                ng-options="item as item.Name for item in baseTeas track by item.Id"></select>
+                    </td>
+                    <td>
+                        <p data-ng-hide="order.editMode">{{ order.Flavor.Name }}</p>
+                        <select class="form-control" data-ng-show="order.editMode" ng-model="order.Flavor"
+                                ng-options="item as item.Name for item in flavors  track by item.Id"></select>
+                    </td>
+                    <td>
+                        <p data-ng-hide="order.editMode">{{ order.Toppings.length }} topping(s)</p>
+                        <label ng-repeat="topping in toppings">
+                            <input type="checkbox" data-ng-show="order.editMode" checklist-model="$parent.order.Toppings" checklist-value="topping"><span data-ng-show="order.editMode">{{topping.Name}}</span>
+                        </label>
+                    </td>
+                    <td>
+                        <p>${{ calculateOrder(order) }}</p>
+                    </td>
+                    <td>
+                        <p data-ng-hide="order.editMode"><a data-ng-click="toggleEdit(order)" href="javascript:;">Edit</a> | <a data-ng-click="delete(order)" href="javascript:;">Delete</a></p>
+                        <p data-ng-show="order.editMode"><a data-ng-click="save(order)" href="javascript:;">Save</a></p>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <div class="well">Total Orders : ${{ calculateOrders() }}</div>
+        </div>
     </div>
-
 </div>

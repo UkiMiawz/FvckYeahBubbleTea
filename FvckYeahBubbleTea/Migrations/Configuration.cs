@@ -1,5 +1,3 @@
-using FvckYeahBubbleTea.Models;
-
 namespace FvckYeahBubbleTea.Migrations
 {
     using System;
@@ -7,15 +5,14 @@ namespace FvckYeahBubbleTea.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TeaContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<FvckYeahBubbleTea.Models.TeaContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "FvckYeahBubbleTea.Models.TeaContext";
+            AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(TeaContext context)
+        protected override void Seed(FvckYeahBubbleTea.Models.TeaContext context)
         {
             //  This method will be called after migrating to the latest version.
 

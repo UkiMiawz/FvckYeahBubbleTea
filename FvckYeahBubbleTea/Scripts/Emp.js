@@ -139,22 +139,60 @@ app.controller('OrderController', function($scope, $http) {
         $scope.loading = false;
     });
 
-    $scope.updatePrice = function() {
+    $scope.updatePrice = function () {
+
+        var totalPrice = 0;
+
         if ($scope.selectedSize != null) {
 
-            $scope.totalPrice = $scope.selectedSize.Price;
+            totalPrice = $scope.selectedSize.Price;
 
             for (var i = 0; i < $scope.selectedToppings.length; i++) {
-                $scope.totalPrice += $scope.selectedToppings[i].Price;
+                totalPrice += $scope.selectedToppings[i].Price;
             }
-            $scope.$apply();
         }
+
+        return totalPrice;
 
     };
 
-    //Used to add a new record
+    $scope.calculateOrder = function (order) {
+
+        var totalPrice = 0;
+
+        if (order.Size != null) {
+
+            totalPrice = order.Size.Price;
+
+            for (var i = 0; i < order.Toppings.length; i++) {
+                totalPrice += order.Toppings[i].Price;
+            }
+        }
+        return totalPrice;
+
+    };
+
+    $scope.calculateOrders = function () {
+
+        var totalPrice = 0;
+
+        for (var i = 0; i < $scope.orders.length; i++) {
+            if ($scope.orders[i].Size != null) {
+
+                totalPrice += $scope.orders[i].Size.Price;
+
+                for (var j = 0; j < $scope.orders[i].Toppings.length; j++) {
+                    totalPrice += $scope.orders[i].Toppings[j].Price;
+                }
+            }
+        }
+
+        return totalPrice;
+
+    };
+
+    //add order
     $scope.add = function () {
-        console.log("TESSSTTTTTT");
         $scope.loading = true;
         var newOrder = {
             BaseTea: $scope.selectedBaseTea,
@@ -167,10 +205,50 @@ app.controller('OrderController', function($scope, $http) {
             $scope.orders.push(data);
             $scope.loading = false;
         }).error(function (data) {
-            $scope.error = "An Error has occured while Adding Order! " + data;
+            $scope.error = "An Error has occured!" + data;
             $scope.loading = false;
 
         });
+    };
+
+    //edit order
+    $scope.delete = function () {
+        $scope.loading = true;
+        var orderId = this.order.Id;
+        $http.delete('/api/order/' + orderId).success(function (data) {
+            alert("Deleted Successfully!!");
+            $.each($scope.orders, function (i) {
+                if ($scope.orders[i].Id === orderId) {
+                    $scope.orders.splice(i, 1);
+                    return false;
+                }
+            });
+            $scope.loading = false;
+        }).error(function (data) {
+            $scope.error = "An Error has occured!" + data;
+            $scope.loading = false;
+
+        });
+    };
+
+    //Used to save a record after edit
+    $scope.save = function () {
+        alert("Edit");
+        $scope.loading = true;
+        var orderEdit = this.order;
+        $http.put('/api/order/' + orderEdit.Id, orderEdit).success(function (data) {
+            alert("Saved Successfully!!");
+            emp.editMode = false;
+            $scope.loading = false;
+        }).error(function (data) {
+            $scope.error = "An Error has occured!" + data;
+            $scope.loading = false;
+
+        });
+    };
+
+    $scope.toggleEdit = function () {
+        this.order.editMode = !this.order.editMode;
     };
 
 })

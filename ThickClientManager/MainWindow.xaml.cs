@@ -29,12 +29,11 @@ namespace ThickClientManager
         private string _apiLink;
         private readonly HttpClient _client;
 
-        
-
         public MainWindow()
         {
             InitializeComponent();
             _client = new HttpClient();
+            TabDataAll.IsEnabled = false;
         }
 
         private async void BtnSaveApiLink_Click(object sender, RoutedEventArgs e)
@@ -53,6 +52,10 @@ namespace ThickClientManager
                 LoadDataFlavor();
                 LoadDataTeaSize();
                 LoadDataTopping();
+
+                TabDataAll.IsEnabled = true;
+                TxtApiLink.IsEnabled = false;
+                BtnSaveApiLink.IsEnabled = false;
             }
             catch (Exception)
             {
@@ -136,8 +139,20 @@ namespace ThickClientManager
 
         #region Base Tea
 
+        private bool BaseTeaIsEmpty()
+        {
+            if (String.IsNullOrWhiteSpace(TxtBaseTeaName.Text))
+            {
+                MessageBox.Show(Constants.NameError);
+                return true;
+            }
+            return false;
+        }
+
         private async void BtnAddBaseTea_Click(object sender, RoutedEventArgs e)
         {
+            if (BaseTeaIsEmpty()) return;
+
             try
             {
                 var baseTea = new BaseTea()
@@ -166,6 +181,8 @@ namespace ThickClientManager
 
         private async void BtnUpdateBaseTea_Click(object sender, RoutedEventArgs e)
         {
+            if(BaseTeaIsEmpty()) return;
+
             try
             {
                 var baseTea = new BaseTea()
@@ -202,8 +219,21 @@ namespace ThickClientManager
 
         #region Flavor
 
+        private bool FlavorIsEmpty()
+        {
+            if (String.IsNullOrWhiteSpace(TxtFlavorName.Text))
+            {
+                MessageBox.Show(Constants.NameError);
+                return true;
+            }
+
+            return false;
+        }
+
         private async void BtnAddFlavor_Click(object sender, RoutedEventArgs e)
         {
+            if (FlavorIsEmpty()) return;
+
             try
             {
                 var flavor = new Flavor()
@@ -232,6 +262,8 @@ namespace ThickClientManager
 
         private async void BtnUpdateFlavor_Click(object sender, RoutedEventArgs e)
         {
+            if (FlavorIsEmpty()) return;
+
             try
             {
                 var flavor = new Flavor()
@@ -268,8 +300,32 @@ namespace ThickClientManager
 
         #region Tea Size
 
+        private bool TeaSizeIsEmpty()
+        {
+            int output = 0;
+
+            if (String.IsNullOrWhiteSpace(TxtTeaSizeName.Text))
+            {
+                MessageBox.Show(Constants.NameError);
+                return true;
+            }
+            else if (String.IsNullOrWhiteSpace(TxtTeaSizePrice.Text))
+            {
+                MessageBox.Show(Constants.NameError);
+                return true;
+            }
+            else if (!int.TryParse(TxtTeaSizePrice.Text, out output))
+            {
+                MessageBox.Show(Constants.PriceError);
+                return true;
+            }
+            return false;
+        }
+
         private async void BtnAddTeaSize_Click(object sender, RoutedEventArgs e)
         {
+            if (TeaSizeIsEmpty()) return;
+
             try
             {
                 var teaSize = new TeaSize()
@@ -300,6 +356,8 @@ namespace ThickClientManager
 
         private async void BtnUpdateTeaSize_Click(object sender, RoutedEventArgs e)
         {
+            if (TeaSizeIsEmpty()) return;
+
             try
             {
                 var teaSize = new TeaSize()
@@ -337,8 +395,32 @@ namespace ThickClientManager
 
         #region Topping
 
+        private bool ToppingIsEmpty()
+        {
+            int output = 0;
+
+            if (String.IsNullOrWhiteSpace(TxtToppingName.Text))
+            {
+                MessageBox.Show(Constants.NameError);
+                return true;
+            }
+            else if (String.IsNullOrWhiteSpace(TxtToppingPrice.Text))
+            {
+                MessageBox.Show(Constants.NameError);
+                return true;
+            }
+            else if (!int.TryParse(TxtToppingPrice.Text, out output))
+            {
+                MessageBox.Show(Constants.PriceError);
+                return true;
+            }
+            return false;
+        }
+
         private async void BtnAddTopping_Click(object sender, RoutedEventArgs e)
         {
+            if (ToppingIsEmpty()) return;
+
             try
             {
                 var topping = new Topping()
@@ -369,6 +451,8 @@ namespace ThickClientManager
 
         private async void BtnUpdateTopping_Click(object sender, RoutedEventArgs e)
         {
+            if (ToppingIsEmpty()) return;
+
             try
             {
                 var topping = new Topping()

@@ -184,21 +184,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504080754326_BubbleTeaAdd.cs" />
-    <Compile Include="Migrations\201504080754326_BubbleTeaAdd.Designer.cs">
-      <DependentUpon>201504080754326_BubbleTeaAdd.cs</DependentUpon>
+    <Compile Include="Migrations\201504101632020_Initial.cs" />
+    <Compile Include="Migrations\201504101632020_Initial.Designer.cs">
+      <DependentUpon>201504101632020_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504090243419_AddOrder.cs" />
-    <Compile Include="Migrations\201504090243419_AddOrder.Designer.cs">
-      <DependentUpon>201504090243419_AddOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504100504327_UpdateOrder.cs" />
-    <Compile Include="Migrations\201504100504327_UpdateOrder.Designer.cs">
-      <DependentUpon>201504100504327_UpdateOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504100510088_AddCustomer.cs" />
-    <Compile Include="Migrations\201504100510088_AddCustomer.Designer.cs">
-      <DependentUpon>201504100510088_AddCustomer.cs</DependentUpon>
+    <Compile Include="Migrations\201504101736477_changeEf.cs" />
+    <Compile Include="Migrations\201504101736477_changeEf.Designer.cs">
+      <DependentUpon>201504101736477_changeEf.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -596,17 +588,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504080754326_BubbleTeaAdd.resx">
-      <DependentUpon>201504080754326_BubbleTeaAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504101632020_Initial.resx">
+      <DependentUpon>201504101632020_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504090243419_AddOrder.resx">
-      <DependentUpon>201504090243419_AddOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504100504327_UpdateOrder.resx">
-      <DependentUpon>201504100504327_UpdateOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504100510088_AddCustomer.resx">
-      <DependentUpon>201504100510088_AddCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504101736477_changeEf.resx">
+      <DependentUpon>201504101736477_changeEf.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
