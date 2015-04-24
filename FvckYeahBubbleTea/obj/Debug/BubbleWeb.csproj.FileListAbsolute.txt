@@ -120,8 +120,7 @@ D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Micr
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csprojResolveAssemblyReference.cache
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.Initial.resources
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.changeEf.resources
-D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csproj.GenerateResource.Cache
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.dll
 D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.pdb
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\FvckYeahBubbleTea.Migrations.initial.resources
+D:\Projects\Bapet\FvckYeahBubbleTea\FvckYeahBubbleTea\FvckYeahBubbleTea\obj\Debug\BubbleWeb.csproj.GenerateResource.Cache

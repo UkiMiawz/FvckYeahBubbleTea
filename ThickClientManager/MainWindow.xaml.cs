@@ -38,7 +38,16 @@ namespace ThickClientManager
 
         private async void BtnSaveApiLink_Click(object sender, RoutedEventArgs e)
         {
-            _apiLink = TxtApiLink.Text;
+            var tempApiLink = TxtApiLink.Text;
+            Uri uriResult;
+
+            if (!(Uri.TryCreate(tempApiLink, UriKind.Absolute, out uriResult) && uriResult.Scheme == Uri.UriSchemeHttp))
+            {
+                MessageBox.Show(Constants.UriError);
+                return;
+            }
+
+            _apiLink = String.Format("{0}://{1}",uriResult.Scheme, uriResult.Authority);
 
             //Initialize HTTP Client
             _client.BaseAddress = new Uri(_apiLink);

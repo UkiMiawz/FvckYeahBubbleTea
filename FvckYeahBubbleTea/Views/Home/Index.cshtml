@@ -42,33 +42,36 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">Base Tea</label>
                         <div class="col-sm-8">
-                            <select class="form-control" ng-model="selectedBaseTea"
-                                    ng-options="item as item.Name for item in baseTeas"></select>
+                            <select name="addBaseTea" class="form-control" ng-model="selectedBaseTea"
+                                    ng-options="item as item.Name for item in baseTeas" required=""></select>
+                            <span class="text-danger" ng-show="addOrder.addBaseTea.$error.required">Select Base Tea</span>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-sm-4 control-label">Size</label>
                         <div class="col-sm-8">
-                            <label ng-repeat="size in teaSizes">
-                                    <input type="radio" ng-model="$parent.selectedSize"
-                                           ng-value="size">{{size.Name}}
+                            <label ng-repeat="size in teaSizes" class="radio">
+                                <input name="addTeaSize" type="radio" ng-model="$parent.selectedSize"
+                                       ng-value="size" required>{{size.Name}}
                             </label>
+                            <span class="text-danger" ng-show="addOrder.addTeaSize.$error.required">Select Tea Size</span>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-sm-4 control-label">Flavor</label>
                         <div class="col-sm-8">
-                            <select class="form-control" ng-model="selectedFlavor"
-                                    ng-options="item as item.Name for item in flavors"></select>
+                            <select name="addFlavor" class="form-control" ng-model="selectedFlavor"
+                                    ng-options="item as item.Name for item in flavors" required></select>
+                            <span class="text-danger" ng-show="addOrder.addFlavor.$error.required">Select Flavor</span>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-sm-4 control-label">Topping</label>
                         <div class="col-sm-8">
-                            <label ng-repeat="topping in toppings">
+                            <label ng-repeat="topping in toppings" class="checkbox">
                                 <label><input type="checkbox" checklist-model="$parent.selectedToppings" checklist-value="topping">{{topping.Name}}</label>
                             </label>
                         </div>
@@ -84,13 +87,13 @@
                     <hr />
 
                     <div class="col-sm-10">
-                        <input type="submit" ng-click="add()" class="btn btn-info" value="Add Order">
+                        <input ng-disabled="addOrder.$invalid" type="submit" ng-click="add()" class="btn btn-info" value="Add Order">
                     </div>
                 </div>
             </form>
         </div>
         <hr />
-        <div class="col-md-12 row">
+        <div class="col-md-12 row table-responsive">
             <table class="table table-bordered table-hover" style="width:800px">
                 <tr>
                     <th>#</th>
@@ -103,11 +106,11 @@
                 </tr>
 
                 <tr data-ng-repeat="order in orders">
-                    <td><strong data-ng-hide="order.editMode">{{ order.Id }}</strong></td>
+                    <td><strong>{{ order.Id }}</strong></td>
                     <td>
                         <p data-ng-hide="order.editMode">{{ order.Size.Name }}</p>
-                        <label ng-repeat="size in teaSizes">
-                            <input type="radio" name="a{{ order.Id }}" data-ng-show="order.editMode" ng-model="$parent.order.Size"
+                        <label ng-repeat="size in teaSizes" class="radio">
+                            <input type="radio" ng-attr-name="a{{ order.Id }}" data-ng-show="order.editMode" ng-click="radioButtonChange(size)"
                                    ng-checked="{{size.Id == $parent.order.Size.Id}}" ng-value="size"><span data-ng-show="order.editMode">{{size.Name}}</span>
                         </label>
                     </td>
@@ -123,7 +126,7 @@
                     </td>
                     <td>
                         <p data-ng-hide="order.editMode">{{ order.Toppings.length }} topping(s)</p>
-                        <label ng-repeat="topping in toppings">
+                        <label ng-repeat="topping in toppings" class="checkbox">
                             <input type="checkbox" data-ng-show="order.editMode" checklist-model="$parent.order.Toppings" checklist-value="topping"><span data-ng-show="order.editMode">{{topping.Name}}</span>
                         </label>
                     </td>

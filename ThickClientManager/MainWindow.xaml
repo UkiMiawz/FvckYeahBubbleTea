@@ -116,9 +116,10 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <TextBox x:Name="TxtApiLink" HorizontalAlignment="Left" Height="23" Margin="88,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="318" Grid.Column="1"/>
-        <Label Content="API Link" HorizontalAlignment="Left" Margin="26,30,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="52"/>
-        <Button x:Name="BtnSaveApiLink" Content="Load Data" HorizontalAlignment="Left" Margin="411,30,0,0" VerticalAlignment="Top" Width="75" Click="BtnSaveApiLink_Click" Grid.Column="1" Height="22" />
+        <TextBox x:Name="TxtApiLink" HorizontalAlignment="Left" Height="23" Margin="118,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="318" Grid.Column="1"/>
+        <Label Content="API Link" HorizontalAlignment="Left" Margin="56,24,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="52"/>
+        <Button x:Name="BtnSaveApiLink" Content="Load Data" HorizontalAlignment="Left" Margin="441,24,0,0" VerticalAlignment="Top" Width="75" Click="BtnSaveApiLink_Click" Grid.Column="1" Height="22" />
+        <Label Grid.ColumnSpan="2" Content="ex: http://localhost:8080" HorizontalAlignment="Left" Margin="201,44,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

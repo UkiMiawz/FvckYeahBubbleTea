@@ -184,13 +184,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504101632020_Initial.cs" />
-    <Compile Include="Migrations\201504101632020_Initial.Designer.cs">
-      <DependentUpon>201504101632020_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504101736477_changeEf.cs" />
-    <Compile Include="Migrations\201504101736477_changeEf.Designer.cs">
-      <DependentUpon>201504101736477_changeEf.cs</DependentUpon>
+    <Compile Include="Migrations\201504111854557_initial.cs" />
+    <Compile Include="Migrations\201504111854557_initial.Designer.cs">
+      <DependentUpon>201504111854557_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -588,11 +584,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504101632020_Initial.resx">
-      <DependentUpon>201504101632020_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504101736477_changeEf.resx">
-      <DependentUpon>201504101736477_changeEf.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504111854557_initial.resx">
+      <DependentUpon>201504111854557_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

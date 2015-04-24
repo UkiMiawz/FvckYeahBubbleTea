@@ -251,4 +251,10 @@ app.controller('OrderController', function($scope, $http) {
         this.order.editMode = !this.order.editMode;
     };
 
+    //handle edit radio button change
+    $scope.radioButtonChange = function (data) {
+        console.log("TEST");
+        this.order.Size = data;
+    };
+
 })

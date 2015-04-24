@@ -26,6 +26,7 @@ namespace ThickClientManager.Global
         public const string NameError = "Please input name";
         public const string PriceError = "Please input price";
         public const string NumberError = "Please input number for price";
+        public const string UriError = "Invalid API link";
 
         #endregion
 
